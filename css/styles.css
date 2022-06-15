@@ -25,7 +25,19 @@ h1 {
   padding-left: 15px;
   padding-right: 15px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*logo*/
 
 .logo {
@@ -47,12 +59,14 @@ h1 {
   padding: 0;
   margin: 0;
 }
-.site-nav {
-  display: flex;
+.nav {
   margin-left: 93px;
 }
+.site-nav {
+  display: flex;
+}
 
-.site-nav .item:not(:last-child) {
+.nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -116,22 +130,17 @@ h1 {
   line-height: 1.17;
   text-align: center;
 }
-.title-none {
-  line-height: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: transparent;
-}
+
 /*hero*/
 
 .hero {
   background-color: var(--background-secondary-color);
   letter-spacing: 0.06em;
   text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
 
   align-items: center;
-
-  height: 600px;
 }
 
 .hero-title {
@@ -142,7 +151,7 @@ h1 {
   margin-top: 0;
 
   margin-bottom: 30px;
-  padding-top: 200px;
+
   max-width: 696px;
 
   color: var(--hero-text-color);
@@ -213,10 +222,7 @@ h1 {
 .names {
   display: flex;
 }
-.names-item {
-  border: 1px solid #ececec;
-  border-radius: 0px 0px 4px 4px;
-}
+
 .names-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -224,6 +230,9 @@ h1 {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.names-text p {
+  margin: 0;
 }
 .names-item img {
   display: block;
@@ -276,6 +285,7 @@ h1 {
   display: block;
 }
 .item-card {
+  padding: 24px;
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
@@ -335,12 +345,6 @@ h1 {
   background-color: var(--accent-text-color);
   color: var(--hero-text-color);
 }
-.title-portfolio {
-  line-height: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: transparent;
-}
 
 .portfolio p {
   margin-bottom: 0;
@@ -367,7 +371,7 @@ h1 {
   margin-bottom: 20px;
 }
 .address {
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 0;
 }
 .address .text {
@@ -382,11 +386,13 @@ h1 {
 
 .address .mail,
 .address .tel {
-  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
   text-decoration: none;
+}
+.adress-tel-mail {
+  margin-top: 9px;
 }
