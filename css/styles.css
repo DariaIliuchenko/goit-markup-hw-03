@@ -183,6 +183,7 @@ h1 {
 }
 .benefits {
   display: flex;
+  gap: 30px;
 }
 .benefits .title {
   margin-top: 0;
@@ -193,9 +194,10 @@ h1 {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.benefits-item:not(:last-child) {
+/* .benefits-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
+
 .benefits p {
   margin-top: 0;
   margin-bottom: 0;
@@ -208,14 +210,15 @@ h1 {
 
 .case {
   display: flex;
+  gap: 30px;
 }
 
 .images img {
   display: block;
 }
-.images:not(:last-child) {
+/* .images:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 /*-----team--------------------*/
 
@@ -235,11 +238,12 @@ h1 {
 
 .names {
   display: flex;
+  gap: 30px;
 }
 
-.names-item:not(:last-child) {
+/* .names-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 .names-text {
   text-align: center;
   padding-top: 30px;
