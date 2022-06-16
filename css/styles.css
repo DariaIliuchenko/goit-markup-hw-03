@@ -139,6 +139,8 @@ h1 {
   text-align: center;
 }
 .hero-conteiner {
+  padding-top: 200px;
+  padding-bottom: 200px;
   align-items: center;
 }
 .hero-title {
